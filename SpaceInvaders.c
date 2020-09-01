@@ -128,44 +128,6 @@ uint32_t Convert(uint32_t input, uint32_t ID){
 	if((ret - currentPiece[0].distlow) < 48){
 		ret = 48+currentPiece[0].distlow;
 	}
-
-	// switch(currentPiece[0].pieceID){
-	// 	case 0:
-	// 		if((ret + 5) > 123){
-	// 			ret = 118;
-	// 		}
-	// 		break;
-	// 	case 1: 
-	// 		if((ret + 10) > 123){
-	// 			ret = 113;
-	// 		}
-	// 		break;
-	// 	case 2:
-	// 		if((ret) > 123){
-	// 			ret = 123;
-	// 		}
-	// 		break;
-	// 	case 3:
-	// 		if((ret + 5) > 123){
-	// 			ret = 118;
-	// 		}
-	// 		break;
-	// 	case 4: 
-	// 		if((ret + 10) > 123){
-	// 			ret = 113;
-	// 		}
-	// 		break;
-	// 	case 5:
-	// 		if((ret + 5) > 123){
-	// 			ret = 118;
-	// 		}
-	// 		break;
-	// 	case 6:
-	// 		if((ret + 10) > 123){
-	// 			ret = 113;
-	// 		}
-	// 		break;
-	// }
 	
 	return ret;
 }
@@ -174,7 +136,7 @@ uint32_t Convert(uint32_t input, uint32_t ID){
 
 
 uint32_t Random7(void){
-  return ((Random32()>>24)%7)+1;  // returns 1, 2, 3, 4, or 5 STILL NEED TO FIX THIS
+  return ((Random32()>>24)%7)+1;  // returns 1, 2, 3, 4, 5, 6, 7
 }
 
 
